@@ -1,0 +1,17 @@
+body {
+  margin: auto;
+  background-color: #91C6E6;
+}
+.axis {
+  stroke: #F5E2D3;
+  stroke-width: 2px;
+  stroke-dasharray: 4 5;
+}
+.path {
+  stroke: #444;
+  stroke-width: 4px;
+  stroke: #1978AC;
+  fill: transparent;
+  fill-opacity: 0;
+  opacity: 1;
+}

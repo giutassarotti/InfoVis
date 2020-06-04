@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Visualizzazione delle informazioni</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		
+		<script src="src.js"></script>
+	</head>
+	
+	<body>
+		<div id="starPlot">	
+		</div>
+	</body>
+
+	<script>
+		d3.json("data.json", function(data) {
+
+			var max = d3.max( data, function(d) { return d3.max( d ) } )
+		    
+		    draw([0,max], data);
+		});
+	</script>
+</html>
